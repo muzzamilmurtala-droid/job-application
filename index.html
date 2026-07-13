@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Job Application Form</h1>
+    <hr>
+
+    <p>
+        Thank you for your interest in working with us. Please check below for
+        available job opportunities that meet your criteria and send your
+        application by filling out the Job Application Form.
+    </p>
+
+    <form>
+
+        <label>Name</label>
+
+        <div class="row">
+            <input type="text" placeholder="First">
+            <input type="text" placeholder="Last">
+        </div>
+
+        <label>Email</label>
+        <input type="email" placeholder="john.doe@example.com">
+
+        <div class="row">
+            <div>
+                <label>What position are you applying for?</label>
+                <select>
+                    <option>- Select -</option>
+                    <option>Manager</option>
+                    <option>Developer</option>
+                    <option>Designer</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Available Date</label>
+                <input type="date">
+            </div>
+        </div>
+
+        <label>What is your current employee status?</label>
+
+        <div class="radio-group">
+            <label><input type="radio" name="status"> Employed</label>
+            <label><input type="radio" name="status"> Self-Employed</label>
+            <label><input type="radio" name="status"> Unemployed</label>
+            <label><input type="radio" name="status"> Student</label>
+        </div>
+
+        <div class="row">
+
+            <div>
+                <label>Please provide your resume link</label>
+                <input type="url" placeholder="https://www.example.com">
+            </div>
+
+            <div>
+                <label>Please upload your resume</label>
+
+                <input type="file" id="resume" hidden>
+
+                <label for="resume" class="upload-box">
+                    <span>Resume</span>
+                    <span>📤</span>
+                </label>
+            </div>
+
+        </div>
+
+        <label>Do you have references? (optional)</label>
+
+        <div class="row">
+            <input type="text" placeholder="First">
+            <input type="text" placeholder="Last">
+        </div>
+
+        <label>Reference Email</label>
+        <input type="email" placeholder="john.doe@example.com">
+
+        <div class="buttons">
+            <button type="reset" class="reset-btn">Reset</button>
+            <button type="submit" class="apply-btn">Apply</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
